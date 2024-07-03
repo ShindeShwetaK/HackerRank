@@ -95,6 +95,14 @@ def timeConversion(s):
         new_pss=int(new_ps)+120000
         modified= str(new_pss)[:2] + ':' + str(new_pss)[2:4]+':' + str(new_pss)[4:6]
         return modified
+OR
+    if s[-2] == 'A':
+        if s[0:2] == '12':
+            return '00' + s[2:-2]
+        return s[0:-2]
+    if s[0:2] == '12':
+        return s[0:-2]
+    return str(int(s[0:2]) + 12) + s[2:]
         
 
 if __name__ == '__main__':
