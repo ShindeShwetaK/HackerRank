@@ -116,4 +116,33 @@ if __name__ == '__main__':
 
     fptr.close()
 
+###################################################################
+#Q4.Spare Arrays
+#https://www.hackerrank.com/interview/preparation-kits/one-month-preparation-kit/one-month-week-one/challenges
+def matchingStrings(strings, queries):
+    # Write your code here
+    count_values =[]
+    for i in range(len(queries)):
+        if queries[i] in strings:
+            count_values.append(strings.count(queries[i]))
+        if queries[i] not in strings:
+            count_values.append(0)
+
+    return count_values
+
+##this is working for smaller test cases
+from collections import defaultdict
+result=[]
+dict_s=defaultdict(int)
+
+for i in q:
+    for j in s:
+        if i == j:
+            dict_s[i]+=1
+        else:
+            dict_s[i]
+
+for i in dict_s.values():
+    result.append(i)
+#################################################################
             
