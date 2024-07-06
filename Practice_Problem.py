@@ -145,4 +145,11 @@ for i in q:
 for i in dict_s.values():
     result.append(i)
 #################################################################
+#Q5.Complete the 'lonelyinteger' function below.
+#https://www.hackerrank.com/challenges/one-month-preparation-kit-lonely-integer/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-month-preparation-kit&playlist_slugs%5B%5D=one-month-week-one
+    for num in a:
+        if a.count(num) == 1:
+            return num
+#####################################################################
+
             
