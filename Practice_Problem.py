@@ -1,4 +1,5 @@
 ###################################Week1###################################################
+#https://www.hackerrank.com/interview/preparation-kits/one-month-preparation-kit/one-month-week-one/challenges
 
 ####Problem 1###############################################################################
 #!/bin/python3
@@ -193,7 +194,15 @@ print(s,2**32,t,int(t,2),(int(t1,2)-1))
             return 'not pangram'
     return 'pangram'
 ###########################################################################
-#Q10
+#Q10.Premuting Two Arrays
+    a=sorted(A)
+    b=sorted(B, reverse=True)
+    for i, j in zip(a, b):
+        if i + j < k:
+            return 'NO'
+    return 'YES'
+#########################################################################
+#Q11.
                
 
 
