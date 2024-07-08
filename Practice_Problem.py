@@ -202,7 +202,23 @@ print(s,2**32,t,int(t,2),(int(t1,2)-1))
             return 'NO'
     return 'YES'
 #########################################################################
-#Q11.
+#Q11.Subarray Division
+    count, i = 0, 0
+    while m+i <= len(s):
+        if sum(s[i: m+i]) == d:
+            count += 1
+        i += 1
+    return count
+or
+    count, i = 0, 0
+    while i < len(s):
+        if sum(s[i: m+i]) == d:
+            count += 1
+        i += 1
+    return count
+##########################################################################
+Q12.
+
                
 
 
