@@ -44,7 +44,25 @@ def a(n,p):
 ######################################################################
 #Q4.
 ######################################################################
-#Q2.
+#Q5.Encrypt Message
+    o='abcdefghijklmnopqrstuvwxyz'
+    while k>len(o):
+        k-=len(o)
+    new_o= o[k:]+o[:k]
+    u_new_o=new_o.upper()
+    u_o=o.upper()
+    return_str=''
+    D={}
+    for i in range(len(o)):
+        D[o[i]]=new_o[i]
+        D[u_o[i]]=u_new_o[i]
+    for i in s:
+        if i in D:
+            return_str+=(D[i])
+        else: 
+            return_str+=(i)
+        
+    return return_str
 ######################################################################
 #Q2.
 ######################################################################
