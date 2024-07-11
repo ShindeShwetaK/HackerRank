@@ -46,9 +46,9 @@ def a(n,p):
 ######################################################################
 #Q5.Encrypt Message
     o='abcdefghijklmnopqrstuvwxyz'
-    while k>len(o):
-        k-=len(o)
-    new_o= o[k:]+o[:k]
+    #while k>len(o):
+       # k-=len(o)
+    new_o= o[k%26:]+o[:k%26]
     u_new_o=new_o.upper()
     u_o=o.upper()
     return_str=''
