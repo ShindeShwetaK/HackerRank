@@ -64,7 +64,27 @@ def a(n,p):
         
     return return_str
 ######################################################################
-#Q2.
+#Q6.Min Max
+def maxMin(k, arr):
+    # Write your code here
+    test_arr=[]
+    min_no=[]
+    sort_arr=sorted(arr, reverse=True)
+    for i in range(len(sort_arr)-(k-1)):
+        test_arr=sort_arr[i:i+k]
+        min_no.append(test_arr[0]-test_arr[-1])
+    return (min(min_no))
+     # we can use combination connection to  create different combination of given set or array
+     from itertools import combinations
+     arr=[1,2,3,4,10,20,30,40,100,200]
+     k=4
+     min_no=[]
+     unique_combinations = set(combinations(arr, k))
+     #print(unique_combinations)
+     for comb in unique_combinations:
+          #print(comb)
+          min_no.append(max(comb)-min(comb))
+     print(min(min_no))
 ######################################################################
 #Q2.
 ######################################################################
