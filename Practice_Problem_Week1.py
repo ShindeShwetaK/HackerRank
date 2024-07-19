@@ -232,6 +232,19 @@ s = input()
 t = input()
 print(strings_xor(s, t))
 ##########################################################################
+#Q. Staircase problem
+#https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true
+def staircase(n):
+    # Write your code here
+    for i in range(1,n+1):
+        print((n-i)*' '+i*'#')
+             #
+            ##
+           ###
+          ####
+         #####
+        ######
+############################################################################
 
 
                
