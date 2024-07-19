@@ -245,6 +245,11 @@ def staircase(n):
          #####
         ######
 ############################################################################
+#Q.Candle
+#https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true
+    c_m=max(candles)
+    count_c=candles.count(c_m)
+    return count_c
 
 
                
