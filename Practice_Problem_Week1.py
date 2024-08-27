@@ -244,6 +244,17 @@ def staircase(n):
           ####
          #####
         ######
+    def printpatten(n):
+    for i in range(n):
+       Space=n-i-1
+       ast=2*i+1
+       print(''*Space+'*'*ast,i)
+           *
+          ***
+         *****
+    
+n=10
+printpatten(n)
 ############################################################################
 #Q.Candle
 #https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true
